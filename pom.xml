@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>GeYao</groupId>
-  <artifactId>S2S4H5Template</artifactId>
+  <artifactId>HibernateTest</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>S2S4H5Template Maven Webapp</name>
+  <name>HibernateTest Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
     <properties>
@@ -240,15 +240,16 @@
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
         </dependency>
-
-
-
-
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
 
     </dependencies>
   <build>
-    <finalName>S2S4H5Template</finalName>
+    <finalName>HibernateTest</finalName>
 
       <!--<plugins>-->
           <!--<plugin>-->

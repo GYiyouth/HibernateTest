@@ -1,7 +1,7 @@
-package pojo.vo;
+package geyao.pojo.vo;
 
 import org.springframework.stereotype.Component;
-import tool.BeanFactory;
+import geyao.tool.BeanFactory;
 
 /**
  * Created by geyao on 2017/3/9.

@@ -1,4 +1,4 @@
-package tool;
+package geyao.tool;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

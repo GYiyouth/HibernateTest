@@ -1,4 +1,4 @@
-package log4j;
+package geyao.log4j;
 
 import org.apache.log4j.*;
 
