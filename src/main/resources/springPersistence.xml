@@ -22,6 +22,7 @@
           p:dataSource-ref="dataSource">
         <!--annotatedClass用来列出所有的持久化类-->
         <property name="packagesToScan" value="geyao.pojo"/>
+        <!--annotatedClass用来列出所有的持久化类-->
         <property name="annotatedClasses">
             <list>
             </list>
@@ -34,6 +35,7 @@
                 </prop>
                 <!--是否根据hibernate映射创建数据表-->
                 <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <!--好看地显示SQL语句-->
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
             </props>
@@ -44,7 +46,7 @@
     <!-- 开启注解事务 只对当前配置文件有效 -->
     <tx:annotation-driven transaction-manager="txManager"/>
 
-
+    <!--事务管理器-->
     <bean id="txManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
@@ -61,5 +63,9 @@
             <!--<tx:method name="update*" />-->
         <!--</tx:attributes>-->
     <!--</tx:advice>-->
+
+    <bean id="hibernateTemplate"
+          class="org.springframework.orm.hibernate5.HibernateTemplate"
+          p:sessionFactory-ref="sessionFactory"/>
 
 </beans>
